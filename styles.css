@@ -6,7 +6,7 @@
 
 :root {
   --orange: #f2c14e;
-  --winning-blocks: #2d414b;
+  --winning-blocks: #f7f7ae;
 }
 
 body {
@@ -19,8 +19,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -240px;
   margin-left: -10%;
+  margin: 20px 0px 10px -10%;
 }
 
 .title-logo img {
@@ -62,4 +62,31 @@ body {
   margin-left: -70%;
   margin-right: 20px;
   cursor: pointer;
+}
+
+#gameboard {
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px 40px -10%;
+}
+
+.box {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  font-size: 80px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  cursor: url("assets/pen.png"), auto;
+}
+
+.box:nth-child(3n) {
+  border-right: none;
+}
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
 }
