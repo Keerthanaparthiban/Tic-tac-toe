@@ -2,6 +2,20 @@ let playerText = document.getElementById('playerText')
 let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
 
+let replayBtns = document.getElementsByClassName('replayBtn');
+let replayTexts = document.getElementsByClassName('replay-text');
+
+// Loop through each replay button
+for (let i = 0; i < replayBtns.length; i++) {
+  replayBtns[i].addEventListener('mouseover', () => {
+    replayTexts[i].style.display = 'block';
+  });
+
+  replayBtns[i].addEventListener('mouseout', () => {
+    replayTexts[i].style.display = 'none';
+  });
+}
+
 let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winning-blocks')
 
 const O_TEXT = "O"
