@@ -12,57 +12,54 @@
 body {
   color: var(--orange);
   font-family: "Finger Paint", cursive;
+  background-color: #afaed8;
 }
-h1 {
-  font-size: 54px;
-  text-transform: uppercase;
+
+.title-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -240px;
+  margin-left: -10%;
+}
+
+.title-logo img {
+  width: 60px;
+  margin-left: 30px;
+}
+
+#playerText {
+  color: rgba(0, 0, 0, 0.978);
+  font-size: 40px;
 }
 
 .container {
   padding: 40px;
+  width: 60%;
+  margin: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #37505c;
+  background-image: url(assets/background-tic-tac-toe.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#gameboard {
-  width: 300px;
+.replay {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-.box {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  color: var(--orange);
-  font-size: 120px;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-}
-.box:nth-child(3n) {
-  border-right: none;
-}
-.box:nth-child(6) ~ .box {
-  border-bottom: none;
-}
-button {
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: var(--orange);
-  color: #333;
-  border-color: var(--orange);
-  font-size: 18px;
-  transition: 200ms transform;
-  font-weight: 600;
+  align-items: center;
 }
 
-button:hover {
+.replay-text {
+  display: none;
+}
+
+.replay img {
+  width: 50px;
+  margin-left: -70%;
+  margin-right: 20px;
   cursor: pointer;
-  transform: translateY(-2px);
 }
