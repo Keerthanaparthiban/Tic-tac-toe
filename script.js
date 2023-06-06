@@ -1,5 +1,4 @@
 let playerText = document.getElementById('playerText')
-let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
 
 let replayBtn = document.querySelector('.replayBtn');
@@ -66,7 +65,7 @@ function playerHasWon() {
   return false
 }
 
-restartBtn.addEventListener('click', restart)
+replaytext.addEventListener('click', restart)
 
 function restart() {
   spaces.fill(null)
