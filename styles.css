@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: -10%;
+  width: auto;
   margin: 20px 0px 10px -10%;
 }
 
@@ -59,7 +60,7 @@ body {
 
 .replay img {
   width: 50px;
-  margin-left: -70%;
+  margin-left: -80px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -78,9 +79,9 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--orange);
-  font-size: 80px;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
+  font-size: 70px;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
   cursor: url("assets/pen.png"), auto;
 }
 
@@ -89,4 +90,38 @@ body {
 }
 .box:nth-child(6) ~ .box {
   border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    background-image: none;
+  }
+  #gameboard {
+    margin-left: 10%;
+  }
+  .replay img {
+    margin-left: 10%;
+  }
+  .title-logo img {
+    width: 40px;
+    margin-left: 15px;
+  }
+  .title-logo {
+    margin-bottom: 30px;
+  }
+  .box {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 580px) {
+  #playerText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .title-logo img {
+    display: none;
+  }
 }
