@@ -109,8 +109,8 @@ function restart() {
   playerText.innerHTML = 'Tic Tac Toe';
 
   currentPlayer = X_TEXT;
-  replaytext.style.display = 'none'; // Hide the replay text after restarting the game
-  gameOver = false; // Reset gameOver to false to allow moves again
+  replaytext.style.display = 'none';
+  gameOver = false;
 };
 
 startGame();
