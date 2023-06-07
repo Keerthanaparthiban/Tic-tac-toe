@@ -20,8 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: -10%;
-  width: auto;
-  margin: 20px 0px 10px -10%;
+  margin-top: 15px;
 }
 
 .title-logo img {
@@ -60,16 +59,17 @@ body {
 
 .replay img {
   width: 50px;
-  margin-left: -80px;
   margin-right: 20px;
   cursor: pointer;
+  text-align: center;
+  margin-left: -80px;
 }
 
 #gameboard {
   width: 230px;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0px 40px -10%;
+  margin: 30px 0px 40px -10%;
 }
 
 .box {
@@ -96,11 +96,10 @@ body {
   .container {
     background-image: none;
   }
-  #gameboard {
-    margin-left: 10%;
-  }
+  #gameboard,
+  .title-logo,
   .replay img {
-    margin-left: 10%;
+    margin-left: 0%;
   }
   .title-logo img {
     width: 40px;
@@ -112,16 +111,31 @@ body {
   .box {
     font-size: 60px;
   }
-}
-
-@media (max-width: 580px) {
-  #playerText {
-    font-size: 20px;
+  .replay {
+    margin-top: 30px;
+    color: white;
   }
 }
 
 @media (max-width: 580px) {
+  #playerText {
+    font-size: 30px;
+  }
+  .title-logo {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 640px) {
   .title-logo img {
-    display: none;
+    width: 30px;
+  }
+  .replay {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .container {
+    width: 100%;
   }
 }
